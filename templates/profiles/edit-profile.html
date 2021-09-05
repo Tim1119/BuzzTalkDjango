@@ -1,6 +1,6 @@
  {% extends 'base.html' %}
  {% load static %}
-
+{% block title %}Edit Profile% endblock title %}
   {% if request.user == profile.user %}
  {% block content %}
     <form class="ui form" enctype="multipart/form-data" action="{% url 'profiles:edit-profile' %}" method="POST">

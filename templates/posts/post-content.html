@@ -1,6 +1,6 @@
  {% extends 'base.html' %}
  {% load static %}
-
+{% block title %}Create Post{% endblock title %}
  {% block content %}
     <form class="ui form" enctype="multipart/form-data" action="{% url 'posts:post-view' %}" method="POST">
         {% csrf_token %}
