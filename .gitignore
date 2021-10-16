@@ -1,4 +1,5 @@
 __pycache__ 
 the-buzztalk-venv
 db.sqlite3
-migrations
+profiles/migrations
+Comment/migrations
