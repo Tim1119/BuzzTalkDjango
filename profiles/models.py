@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from autoslug import AutoSlugField
 from posts.models import UserPostModel
 from Comment.models import Comment
-import PIL
+
 
 # Create your models here.
 class Profile(models.Model):
