@@ -1,6 +1,4 @@
-Comment/__pycache__
-BuzzTalk/.env
-BuzzTalk/__pycache__
-posts/__pycache__
-profiles/__pycache__
-users/__pycache__
+__pycache__ 
+the-buzztalk-venv
+db.sqlite3
+migrations

@@ -1,8 +1,8 @@
  {% extends 'base.html' %}
  {% load static %}
-
- {% block content %}
 {% block title %}Login{% endblock title %}
+ {% block content %}
+
  {% if not request.user.is_authenticated %}
  <h1 class="ui header center" style="display: flex !important;">Login</h1>
  <form method="POST" class="ui form">

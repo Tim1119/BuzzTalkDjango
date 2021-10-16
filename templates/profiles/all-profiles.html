@@ -24,9 +24,9 @@
                         {% csrf_token %}
                         <input type="text" name="profile_pk" value="{{profile.pk}}" hidden>    
                         {% if request.user in profile.all_followers %}       
-                        <button type="submit" class="ui red  button mb-5 w-big" style="margin-left: 20px !important;"><i class="plus square icon"></i>UnFollow</button>
+                        <button type="submit" class="ui red  button mb-5 w-big" style="margin-left: 20px !important;">UnFollow</button>
                         {% else %}       
-                        <button type="submit" class="ui positive basic button mb-5 w-big" style="margin-left: 20px !important;"><i class="plus square icon"></i>Follow</button>
+                        <button type="submit" class="ui positive basic button mb-5 w-big" style="margin-left: 20px !important;">Follow</button>
                         {% endif %}
                       </form>  
                         

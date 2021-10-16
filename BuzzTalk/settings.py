@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from decouple import config
+
 import django_heroku
 import dj_database_url 
 
@@ -13,11 +13,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'django-insecure-)k631wv(v8vcu49u7mt8jnltw44y-f%zj7swd=gl^i(+af9$4m'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG',cast=bool,default=True)
+DEBUG = True
 
 ALLOWED_HOSTS =[ '.herokuapp.com'] 
 

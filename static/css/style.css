@@ -1,5 +1,9 @@
 *{
   font-family: 'Poppins' !important;
+  
+}
+body{
+  background-color: #FAF9F6 !important;
 }
 .profile-image img{
   width: 50px !important;

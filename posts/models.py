@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import FileExtensionValidator
-from PIL import Image
+
 
 # Create your models here.
 class UserPostModel(models.Model):
@@ -34,14 +34,7 @@ class UserPostModel(models.Model):
             url=''
         return url
     
-    def save(self,force_insert=False,force_update=False,using=None,update_fields=None):
-        super().save()
-        if self.image:
-            img =Image.open(self.image.path)
-            if img.height>300 or img.width>300:
-                output_size= (300,300)
-                img.thumbnail(output_size)
-                img.save(self.image.path)
+   
 
 
     class Meta:

@@ -5,4 +5,4 @@ class ProfileForm(ModelForm):
 
     class Meta:
         model = Profile
-        fields = ('first_name','last_name','user','bio','email','country','avatar',)
+        fields = ('first_name','last_name','bio','email','country','avatar',)
